@@ -5,23 +5,18 @@ import java.util.Scanner;
 
 public class arrayTestAgainYesAgain {
 	
-	// arreglo bidimens en java Y python --> ventas anuales (por meses) de dpts:
-		// ropa, deportes, juguetería
-	// crea métodos para: 
-		//insertar las ventas por dpto, buscar un elem, elim ventas de un dpto
-	
 	public static int[][] Agregar (int [][] array, Scanner sc) {
 		int count=0;
 		
 		System.out.print("Inserte un departamento:" +
-		"\n1-Ropa		2-Deportes		3-Juguetería");
+		"\n1-Ropa		2-Deportes		3-JugueterÃ­a");
 			int dep = sc.nextInt() -1;
 		
-		System.out.print("Inserte un mes (en número).");
+		System.out.print("Inserte un mes (en nÃºmero).");
 				int mes = sc.nextInt() -1;
 				
 		if (array [dep][mes] !=0) {
-			System.out.println("Este mes ya está registrado. No es necesario insertar datos.");
+			System.out.println("Este mes ya estÃ¡ registrado. No es necesario insertar datos.");
 				} else {
 					System.out.println("Inserte los ingresos del mes.");
 					array[dep][mes]= sc.nextInt();
@@ -33,10 +28,10 @@ public class arrayTestAgainYesAgain {
 	public static int[][] Elim (int[][]array, Scanner sc) {
 		
 		System.out.print("Inserte el departamento del cual quiere eliminar ingresos:" +
-		"\n1-Ropa		2-Deportes		3-Juguetería");
+		"\n1-Ropa		2-Deportes		3-JugueterÃ­a");
 			int dep = sc.nextInt() -1;
 		
-		System.out.print("Inserte el número del mes que desea eliminar.");
+		System.out.print("Inserte el nÃºmero del mes que desea eliminar.");
 				int mes = sc.nextInt() -1;
 		
 		array[dep][mes]=0;		
@@ -47,10 +42,10 @@ public class arrayTestAgainYesAgain {
 	public static void Search (int[][]array, String[] months, Scanner sc) {
 		
 		System.out.print("Inserte un departamento:" +
-		"\n1-Ropa		2-Deportes		3-Juguetería");
+		"\n1-Ropa		2-Deportes		3-JugueterÃ­a");
 			int dep = sc.nextInt() -1;
 		
-		System.out.print("Inserte un mes (en número).");
+		System.out.print("Inserte un mes (en nÃºmero).");
 				int mes = sc.nextInt() -1;
 			
 		System.out.println("Los ingresos del mes "+months[mes]+" son: "+array[dep][mes]);
